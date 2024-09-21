@@ -201,4 +201,13 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+function getCurrentAgeLilian(){
+  // Get current date and time
+  var now = new Date();
+  var datetime = now.getFullYear() - 2000;
+
+  // Insert date and time into HTML
+  document.getElementById("datetime").innerHTML = datetime;
+  }
+
 })();
